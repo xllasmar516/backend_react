@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    
+    ports:
+      - 8800:80
+    environment:
+      - PMA_HOST=mysql://root:tkmYMtLwKZnOSPvMFkgJtcEEvJCpVejP@gondola.proxy.rlwy.net:28707
+      - PMA_PORT=28707
+      - PMA_USER=root
+      - PMA_PASSWORD=tkmYMtLwKZnOSPvMFkgJtcEEvJCpVejP
